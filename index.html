@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Sorrento by the Sea</title>
+	<meta name="viewport" content="width-device-width, initial-scale=1.0">
+	<link href="css/mainstyle.css" rel="stylesheet" type="text/css">
+	<link href="css/home_slideshow.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<header>
+		<a href="index.html"><img src="images/sorrento_by_the_sea_logo.jpg" alt="Sorrento by the Sea"></a>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="index.html" class="selected">Home</a></li>
+			<li><a href="apartment.html">The apartment</a></li>
+			<li><a href="attraction.html">Attractions</a></li>
+			<li><a href="about.html">About us</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+	</nav>
+	<article>
+		<h1>Company information</h1>
+		<p>On the Mornington Peninsula (one hour from Melbourne) next door to Portsea.</p>
+		<p>Our apartment is a lazy 10-minute walk from the relaxed township of Sorrento that offers restaurants, cafes, a chemist, a supermarket, a butcher and lots more. It is located in a quiet avenue, just 4 houses from the beach. It is in easy walking distance of the ocean beaches and surf.</p>
+		<p>Your private luxury apartment consists of a spacious living area with leather lounge suite overlooking a sun drenched, tree-filled private garden.</p>
+		<p>A separate kitchenette has everything you need to make your stay relaxed and comfortable. A queen sized bedroom and an amazing bathroom complete with free standing black bath entices you to relax and unwind.</p>
+		<p>Two TVs are sure to make everyone happy!  An undercover BBQ area with seating offers plenty of space to stretch out and enjoy that cup of freshly brewed coffee or a glass of wine.</p>
+		<p>This is the perfect place for a home away from home.</p>
+		<!-- Container for the image gallery -->
+		<div class="container">
+
+			<!-- Full-width images with number text -->
+			<div class="slideShow">
+				<div class="numbertext">1 / 3</div>
+				<img src="images/ocean_beach3.jpg" alt="The wilder surfing beaches on the Bass Strait side" style="width:100%">
+			</div>
+
+			<div class="slideShow">
+				<div class="numbertext">2 / 3</div>
+				<img src="images/ocean_beach_2.jpg" alt="The calm front beach on Port Phillip Bay" style="width:100%">
+			</div>
+
+			<div class="slideShow">
+				<div class="numbertext">3 / 3</div>
+				<img src="images/ocean_beach.jpg" alt="Coastal walks, swimming with dolphins and fishing" style="width:100%">
+			</div>
+
+			<!-- Next and previous buttons -->
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+			<!-- Image text -->
+			<div class="caption-container">
+				<p id="caption"></p>
+			</div>
+
+			<!-- Thumbnail images -->
+			<div class="thumbnailRow">
+				<div class="thumbnailColumn">
+					<img class="thumbnail cursor" src="images/ocean_beach3.jpg" style="width:100%" onclick="currentSlide(1)" alt="The wilder surfing beaches on the Bass Strait side">
+				</div>
+				<div class="thumbnailColumn">
+					<img class="thumbnail cursor" src="images/ocean_beach_2.jpg" style="width:100%" onclick="currentSlide(2)" alt="The calm front beach on Port Phillip Bay">
+				</div>
+				<div class="thumbnailColumn">
+					<img class="thumbnail cursor" src="images/ocean_beach.jpg" style="width:100%" onclick="currentSlide(3)" alt="Coastal walks, swimming with dolphins and fishing">
+				</div>
+			 </div>
+		</div> 
+	</article>
+	<aside>
+		<h1>Testimonials</h1>
+		<p><q>So sorry we had to go home after only one night. We will definitely stay two nights next time&excl;</q></p>
+		<p><q>This apartment is close to everything. We didn&apos;t need the car as the walks were amazing</q></p>
+		<p><q>Your attention to detail made our stay so relaxed and comfortable. It was such a shame we had to drive back to our little flat, which is smaller than your apartment. We want to move in&excl;</q></p>
+		<p><q>Cosy and comfortable. We imagined we owned it and enjoyed being spoilt.  Thank you.</q></p>
+		<p><q>What a magical stay at such an amazing place. Completely self-contained and very private. We loved it and will return again and again.</q></p>
+		<p><q>Never felt so spoilt. A perfect get away and so close to everything. We had the best bath ever&excl;</q></p>
+		<p><q>A few minutes&apos; walk from the beach, picnic basket in hand and towel over the shoulder - can&apos;t think of anything better except that wonderful breakfast. That bacon is the best in Melbourne&excl;</q></p>
+		<p><q>Relaxing in that sunny garden watching our dog chasing balls. Let me stay forever&excl;</q></p>
+	</aside>
+	<footer>
+		<hr>
+		<a href="http://www.facebook.com" target="_blank">
+			<img src="images/facebook_small.png" alt="Sorrento by the Sea facebook"></a>
+		<a href="http://www.instagram.com" target="_blank">
+			<img src="images/instagram_small.png" alt="Sorrento by the Sea instagram"></a>
+		<a href="http://www.twitter.com" target="_blank">
+			<img src="images/twitter_small.png" alt="Sorrento by the Sea twitter"></a>
+		<a href="http://www.youtube.com" target="_blank">
+			<img src="images/youtube-variation_small.png" alt="Sorrento by the Sea youtube"></a>
+		<br>
+		<a href="copyright.html" target="_blank">
+		Copyright &copy; 2020</a> Sorrento by the Sea Apartment - Luxury Self Contained Apartment.<br>
+		Phone: 0435 123 456<br>
+		Address: 42 Holyrood Avenue<br>
+				Sorrento VIC 3943
+	</footer>
+	
+	<script src="js/home_slideshow.js"></script>
+</body>
+</html> 

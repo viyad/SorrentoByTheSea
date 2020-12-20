@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Sorrento by the Sea</title>
+	<meta name="viewport" content="width-device-width, initial-scale=1.0">
+	<link href="css/mainstyle.css" rel="stylesheet" type="text/css">
+	<link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+         rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+	<script src="calculator-1.1/calc-1.1-min.js"></script>
+	<script>JSCALC.init();</script>
+	<script src="js/contact.js"></script>
+</head>
+<body>
+	<header><a href="index.html"><img src="images/sorrento_by_the_sea_logo.jpg" alt="Sorrento by the Sea"></a></header>
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="apartment.html">The apartment</a></li>
+			<li><a href="attraction.html">Attractions</a></li>
+			<li><a href="about.html">About us</a></li>
+			<li><a href="contact.html" class="selected">Contact</a></li>
+		</ul>
+	</nav>
+	<article>
+		<h1>Contact details</h1>
+		
+		<section>
+			<h2>Information and Bookings</h2>
+			<p>Sorrento by the Sea Apartment - Luxury Self Contained Apartment</p>
+			<address><strong>Phone:</strong> 0435 123 456<br />
+					<strong>Address:</strong> 42 Holyrood Avenue Sorrento VIC 3943</address>
+		</section>
+		
+		<form name="contact" action="#" method="post" onsubmit="return ProcessEnquiry();">
+		<section>
+			<h2>Contact form</h2>
+			<div class="wrapper">
+				<label for="name">Name<span class="required">*</span></label>
+				<input type="text" id="name" name="name" onfocusout="ValidateName();">
+				<div id="errName" class="errorMessage"></div>
+				
+				<label for="phone">Phone<span class="required">*</span></label>
+				<input type="text" id="phone" name="phone" onfocusout="ValidteContactFields();">
+				<div id="errPhone" class="errorMessage"></div>
+				
+				<label for="email">Email</label>
+				<input type="text" id="email" name="email" onfocusout="ValidteContactFields();">
+				<div id="errEmail" class="errorMessage"></div>
+				
+				<label for="theMessage">Message<span class="required">*</span></label>
+				<textarea id="theMessage" name="theMessage" rows="10" onfocusout="ValidateMessage();"></textarea>
+				<div id="errTheMessage" class="errorMessage"></div>
+				
+				<input type="submit" class="button" name="Submit" value="Submit">
+			</div>
+		</section>
+		</form>
+		
+		<section>
+			<h2>Price calculator</h2>
+				<div class="wrapper-1">
+					<label for="startDate">Starting Date:</label>
+					<input type="text" id="startDate" name="startDate" onchange="ValidateStartDate();">
+					<div id="errStartDate" class="errorMessage calc"></div>
+					
+					<label for="endDate">Ending Date:</label>
+					<input type="text" id="endDate" name="endDate" onchange="ValidateEndDate();">
+					<div id="errEndDate" class="errorMessage calc"></div>
+					
+					<label for="totalPrice">Total price:</label>
+					<input type="text" id="totalPrice" name="totalPrice" disabled value="$0">
+					<div id="errTotalPrice" class="errorMessage calc"></div>
+					
+					<input type="button" class="button" name="calCost" value="Calculate price" onclick="CalculatePrice();">
+				</div>
+				<div id="booking" class="center"></div>
+		</section>
+	</article>
+	<aside>
+		<h1>Getting there</h1>
+			<h2>Map of Sorrento</h2>
+			<div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
+			<div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div></div>
+		
+			<h2>How to get to Sorrento by the Sea</h2>
+			<p>It is easy to find. From Melbourne, take the Monash Freeway, connect onto the Eastlink heading for Portsea, then onto the Peninsula link to Sorrento.</p>
+			<p>Another option is the scenic drive around the beach. Although longer, it allows you to experience the coastline from Port Melbourne to Sorrento.</p>
+			<p>If you choose to come across on the Queenscliff/Sorrento Ferry, it is only a 2 minute drive from the Ferry Depot.</p>
+			<p>If you are a foot passenger, we are happy to meet you at the Sorrento ferry. Just phone us on 0435 123 456 as you arrive.</p>
+	</aside>
+	<footer>
+		<hr>
+		<a href="http://www.facebook.com" target="_blank">
+			<img src="images/facebook_small.png" alt="Sorrento by the Sea facebook"></a>
+		<a href="http://www.instagram.com" target="_blank">
+			<img src="images/instagram_small.png" alt="Sorrento by the Sea instagram"></a>
+		<a href="http://www.twitter.com" target="_blank">
+			<img src="images/twitter_small.png" alt="Sorrento by the Sea twitter"></a>
+		<a href="http://www.youtube.com" target="_blank">
+			<img src="images/youtube-variation_small.png" alt="Sorrento by the Sea youtube"></a>
+		<br>
+		<a href="copyright.html" target="_blank">
+		Copyright &copy; 2020</a> Sorrento by the Sea Apartment - Luxury Self Contained Apartment.<br>
+		Phone: 0435 123 456<br>
+		Address: 42 Holyrood Avenue<br>
+				Sorrento VIC 3943
+	</footer>
+</body>
+</html> 

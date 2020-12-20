@@ -1,0 +1,158 @@
+body {
+	background-color: #a1a1a1;
+	font-family: Helvetica, Calibri, sans-serif;
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+aside {
+	float: right;
+	width: 30%;
+	padding: 0 10px;
+}
+
+article {
+	float: left;
+	width: 62%;
+	margin-left: 1em;
+}
+
+header img {
+	width: 100%;
+}
+
+footer {
+	color: #87423c;
+	clear: both;
+	font-size: .80em;
+	padding-top: 1em;
+	text-align: center;
+}
+
+h1 {
+	color: #87423c;
+	font-size: 36px;
+}
+
+h2 {
+	color: #4d1d18;
+	font-size: 24px;
+}
+
+p {
+	line-height: 150%;
+	text-align: justify;
+}
+
+p.term-condition {
+	font-size: 11px;
+}
+
+a { color: #87423c; }
+a:hover { font-weight: bolder;}
+a:visited { color: #87423c; }
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #fff;
+}
+
+nav ul li {
+	float: left;
+}
+
+nav ul li a {
+	display: block;
+	color: #4d1d18;
+	padding: 0.5em;
+	border-bottom: none;
+	text-decoration: none;
+	text-align: left;
+	font-size: 1.1em;
+}
+
+nav ul li a:hover { color: #555;}
+
+.selected { font-weight: bold; }
+
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 95%;
+	height: auto;
+	padding: 5px;
+}
+
+.pd-top-30 {
+	padding-top: 30px;
+}
+
+/* form styling */
+.wrapper {
+    display: grid;
+	grid-template-columns: 0.5fr 1fr 1fr;
+	grid-gap: 1em;
+}
+
+.wrapper-1 {
+	display: grid;
+	grid-template-columns: 0.5fr 0.5fr 1fr;
+	grid-gap: 1em;
+}
+
+.button {
+   grid-column: 2/3;
+}
+
+.errorMessage {
+	color: #87423c;
+	font-size: 12px;
+}
+
+.required {
+	color: #87423c;
+}
+
+/* Copyright table styling */
+table {
+	width: 85%;
+	border-collapse: collapse;
+	margin: auto;
+}
+
+th {
+	background-color: #4d1d18;
+	color: #fff;
+}
+
+th.copyright, td.copyright {
+	border-bottom: 1px solid #000;
+	height: 50px;
+	padding: 15px;
+	text-align: left;
+	vertical-align: bottom;
+}
+
+caption {
+	color: #87423c;
+	font-size: 36px;
+	padding: 15px;
+}
+
+tr:nth-child(odd) {
+	background-color: #b9b9b9;
+}
+
+@media screen and (max-width: 600px) {
+	nav ul li {float: none;}
+	nav ul li a {text-align: center;}
+	aside {width: 95%;padding-right: 10px;}
+	article {width: 95%;}
+	h1, caption {font-size: 22px;}
+	h2 {font-size: 18px;}
+	body {font-size: 12px;}
+}
