@@ -226,6 +226,11 @@ function ValidateStartDate()
 			document.getElementById("errStartDate").innerHTML = "You can book only 3 months in advance.";
 			valid = false;
 		}
+		else if (startDate.getTime() >= today.setFullYear(2021,4,30))
+		{
+			document.getElementById("errStartDate").innerHTML = "Promotion is expired.";
+			valid = false;
+		}
 		else 
 		{
 			period.start = startDate;
@@ -244,6 +249,7 @@ function ValidateEndDate()
 	document.getElementById("errEndDate").innerHTML = "";
 	var valid = true;
 	var today = new Date();
+	var d = new Date();
 	var endPeriod = AddMonths(new Date(), 3);
 	var startDateStr = document.getElementById("startDate").value;
 	var endDateStr = document.getElementById("endDate").value;
@@ -261,6 +267,11 @@ function ValidateEndDate()
 		if (endDate.getTime() < today.getTime())
 		{
 			document.getElementById("errEndDate").innerHTML = "Ending date must be later than today.";
+			valid = false;
+		}
+		else if (endDate.getTime() >= d.setFullYear(2021,4,30))
+		{
+			document.getElementById("errEndDate").innerHTML = "Promotion is expired.";
 			valid = false;
 		}
 		else if (startDate != "")
